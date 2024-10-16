@@ -13,19 +13,19 @@ include_once("templates/header.php");
                     <th scope="col">#</th>
                     <th scope="col">Nome</th>
                     <th scope="col">Telefone</th>
-                    <th scope="col"></th>
+                    <th scope="col">Ações</th>
                 </tr>
             </thead>
             <tbody>
                 <?php foreach ($contact as $contactx): ?>
                     <tr>
-                        <td scope="row"><?= $contactx['id'] ?></td>
+                        <td scope="row" class="col-id"><?= $contactx['id'] ?></td>
                         <td scope="row"><?= $contactx['name'] ?></td>
                         <td scope="row"><?= $contactx['phone'] ?></td>
                         <td class="actions">
                             <a href="#"><i class="fas fa-eye check-icon"></i></a>
                             <a href="#"><i class="far fa-edit edit-icon"></i></a>
-                            <button type="submit"><i class="fas fa-times delete-icon"></i></button>
+                            <button type="submit" class="delete-btn"><i class="fas fa-times delete-icon"></i></button>
                         </td>
                     </tr>
                 <?php endforeach; ?>
