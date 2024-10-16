@@ -2,6 +2,7 @@
 include_once("templates/header.php");
 ?>
 <div class="container" id="view-contact-container">
+    <?php include_once("templates/backbtn.html"); ?>
     <h1 id="main-title"><?= $contactx['name'] ?></h1>
     <p class="bold">Telefone:</p>
     <p><?= $contactx['phone'] ?></p>
