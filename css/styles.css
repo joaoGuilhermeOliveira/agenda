@@ -94,3 +94,15 @@
   box-shadow: 0 0 10px rgba(0, 123, 255, 1);
 
 }
+
+/* CREATE */
+.btn.btn-primary {
+  margin-top: 10px; 
+}
+
+#create-form,
+#edit-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
